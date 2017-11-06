@@ -1,0 +1,7 @@
+<h2>Thanks for playing! Here's your results:</h2>
+<h3><%= @result[:message].capitalize %>!</h3>
+<p>Grid: <%= @grid.join %></p>
+<p>Your word: <%= @attempt.join %></p>
+<p>Result: <%= @result[:score] %></p>
+<p>Time: <%= @result[:time] %></p>
+<%= link_to 'Try again', '/game' %>
